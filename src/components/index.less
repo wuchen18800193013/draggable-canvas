@@ -1,0 +1,66 @@
+
+.drag-container {
+  position: relative;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  // align-items: flex-start;
+}
+.draggable-item {
+  width: 48%;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  div {
+    min-height: 30px;
+    line-height: 30px;
+  }
+  .draggable-item-label {
+    width: 30%;
+  }
+}
+
+.draggable-item:active {
+  background-color: #f5f5f5;
+}
+
+.draggable-item:hover {
+  background-color: #f5f5f5;
+}
+
+
+select {
+  /* 移除默认样式 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* 自定义样式 */
+  padding: 12px 45px 12px 15px;
+  background: #fff 
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%233498db"><path d="M7 10l5 5 5-5z"/></svg>') 
+    no-repeat right 15px center;
+  background-size: 16px;
+}
+
+/* 聚焦状态 */
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* 选项自定义 */
+option {
+  padding: 10px;
+  background: #fff;
+}
+
+option:checked {
+  background: #3498db linear-gradient(0deg, #3498db 0%, #3498db 100%);
+  color: white;
+}

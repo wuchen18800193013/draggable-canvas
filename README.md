@@ -1,2 +1,11 @@
-# draggable-canvas
-基于react-hook和dnd-kit的可拖拽画布组件
+## 开发
+
+### 安装依赖
+\`\`\`bash
+npm install
+
+\`\`\`
+
+### 启动开发服务器
+\`\`\`bash
+npm run dev
